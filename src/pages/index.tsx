@@ -7,7 +7,6 @@ type Props = {
 };
 
 const Home = ({ title = 'EvoDev - Evolutive Development!' }: Props) => {
-  const pubhouse = 'teste';
   return (
     <div className={styles.container}>
       <Head>
