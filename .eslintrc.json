@@ -1,3 +1,4 @@
+{
   "env": {
     "browser": true,
     "es2021": true,
@@ -30,9 +31,13 @@
     "react-hooks"
   ],
   "rules": {
-    "quotes": ["error", "single", {
-      "avoidEscape": true
-    }],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
     "@typescript-eslint/quotes": [
       "error",
       "single",
@@ -64,7 +69,10 @@
         }
       }
     ],
-    "jsx-quotes": ["error", "prefer-double"],
+    "jsx-quotes": [
+      "error",
+      "prefer-double"
+    ],
     "camelcase": "error",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
@@ -73,4 +81,4 @@
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-unused-vars": "error"
   }
-
+}
