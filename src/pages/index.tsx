@@ -6,9 +6,7 @@ type Props = {
   title: string;
 };
 
-const testFail = 'teste fail';
-
-const Home = ({ title = 'EvoDev - Evolutive Development! Jest' }: Props) => {
+const Home = ({ title = 'EvoDev - Evolutive Development!' }: Props) => {
   return (
     <div className={styles.container}>
       <Head>
@@ -19,11 +17,7 @@ const Home = ({ title = 'EvoDev - Evolutive Development! Jest' }: Props) => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to{' '}
-          <a href="https://nextjs.org">
-            {title}
-            {testFail}
-          </a>
+          Welcome to <a href="https://nextjs.org">{title}</a>
         </h1>
 
         <p className={styles.description}>
