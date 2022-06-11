@@ -13,7 +13,7 @@
   },
   "lint-staged": {
     "src/**/*": [
-      "yarn lint --fix",
+      "npx next lint --fix",
       "yarn test --bail"
     ]
   },
