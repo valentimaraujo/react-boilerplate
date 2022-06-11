@@ -14,7 +14,7 @@
   "lint-staged": {
     "src/**/*": [
       "eslint --cache --cache-location .next/cache/eslint/ --fix",
-      "jest 'src/**/*.ts(x)' "
+      "jest 'src/**/*.ts(x)'  --findRelatedTests --bail"
     ]
   },
   "dependencies": {
