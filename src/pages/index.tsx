@@ -6,7 +6,7 @@ type Props = {
   title: string;
 };
 
-const Home = ({ title = 'EvoDev - Evolutive Development!' }: Props) => {
+const Home = ({ title = 'EvoDev - Evolutive Development! Jest' }: Props) => {
   return (
     <div className={styles.container}>
       <Head>
