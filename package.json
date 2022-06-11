@@ -13,7 +13,8 @@
   },
   "lint-staged": {
     "src/**/*": [
-      "next lint --fix"
+      "eslint --cache --cache-location .next/cache/eslint/ --fix",
+      "yarn test --bail"
     ]
   },
   "dependencies": {
