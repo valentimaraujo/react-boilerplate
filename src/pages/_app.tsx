@@ -8,7 +8,7 @@ function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>React Avançado</title>
-        <link rel="shortcut icon" href="/vercel.svg" />
+        <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/vercel.svg" />
       </Head>
       <GlobalStyles />
