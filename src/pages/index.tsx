@@ -1,9 +1,7 @@
-type Props = {
-  title: string;
-};
+import Main from '../components/Main';
 
-const Home = ({ title = 'EvoDev - Evolutive Development!' }: Props) => {
-  return <h1>Style Compoment - {title}</h1>;
+const Home = () => {
+  return <Main />;
 };
 
 export default Home;
