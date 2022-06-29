@@ -4,6 +4,9 @@ import Head from 'next/head';
 import GlobalStyles from 'style/global';
 
 function App({ Component, pageProps }: AppProps) {
+  const variavelInvalida = 'String';
+  console.log(variavelInvalida);
+
   return (
     <>
       <Head>
