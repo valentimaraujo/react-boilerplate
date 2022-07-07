@@ -47,7 +47,13 @@
       }
     ],
     "@typescript-eslint/naming-convention": [
-      "error",
+      "error",{
+        "selector": "variable",
+        "format": [
+          "camelCase"
+        ],
+        "modifiers": ["const", "destructured", "exported"]
+      },
       {
         "selector": "interface",
         "format": [
