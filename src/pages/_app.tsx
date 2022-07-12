@@ -4,6 +4,10 @@ import Head from 'next/head';
 import GlobalStyles from 'style/global';
 
 function App({ Component, pageProps }: AppProps) {
+  const qualquer_coisa = 'basbb,bas';
+
+  console.log(qualquer_coisa);
+
   return (
     <>
       <Head>
