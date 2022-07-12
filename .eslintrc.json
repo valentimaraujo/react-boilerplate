@@ -28,7 +28,8 @@
   "plugins": [
     "react",
     "@typescript-eslint",
-    "react-hooks"
+    "react-hooks",
+    "prettier"
   ],
   "rules": {
     "quotes": [
@@ -47,7 +48,13 @@
       }
     ],
     "@typescript-eslint/naming-convention": [
-      "error",
+      "error",{
+        "selector": "variable",
+        "format": [
+          "camelCase"
+        ],
+        "modifiers": ["const", "destructured", "exported"]
+      },
       {
         "selector": "interface",
         "format": [
