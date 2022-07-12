@@ -4,6 +4,8 @@ import Head from 'next/head';
 import GlobalStyles from 'style/global';
 
 function App({ Component, pageProps }: AppProps) {
+  // eslint-disable-next-line no-console
+  console.log('qualquer_coisa');
   return (
     <>
       <Head>
