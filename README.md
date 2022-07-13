@@ -1,4 +1,4 @@
-![React Boilerplate](https://user-images.githubusercontent.com/61698985/95465266-31704200-097b-11eb-813c-ddc9a0b2f202.png)
+![React Boilerplate](./img/readme-cover.png)
 
 This is a [Create React App](https://create-react-app.dev/) boilerplate with some configurations from React project.
 
