@@ -1,7 +1,18 @@
 {
-  "name": "react-avancado",
   "version": "0.1.0",
-  "private": true,
+  "license": "MIT",
+  "name": "@evodev/react-boilerplace",
+  "author": "Valentim Araújo",
+  "email": "valentim@evodev.com.br",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/valentimaraujo/react-boilerplate"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=14"
+  },
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
