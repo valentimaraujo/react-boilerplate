@@ -8,7 +8,13 @@
   "settings": {
     "react": {
       "version": "detect"
-    }
+    },
+    "import/extensions": [
+      ".js",
+      ".jsx",
+      ".ts",
+      ".tsx"
+    ]
   },
   "extends": [
     "eslint:recommended",
@@ -16,6 +22,7 @@
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
+    "airbnb",
     "airbnb"
   ],
   "parser": "@typescript-eslint/parser",
@@ -40,6 +47,42 @@
         "avoidEscape": true
       }
     ],
+    "func-names": "off",
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.test.tsx",
+          "**/*.spec.tsx"
+        ]
+      }
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".tsx",
+          ".jsx"
+        ]
+      }
+    ],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "ts": "never",
+        "tsx": "never",
+        "": "never"
+      }
+    ],
     "@typescript-eslint/quotes": [
       "error",
       "single",
@@ -57,7 +100,6 @@
     "react-hooks/exhaustive-deps": "warn",
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
-    "react/jsx-filename-extension": "off",
     "react/jsx-props-no-spreading": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-unused-vars": "error"

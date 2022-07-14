@@ -1,3 +1,4 @@
+/* eslint-disable implicit-arrow-linebreak */
 import Document, {
   Html,
   Head,
@@ -7,7 +8,6 @@ import Document, {
 } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export default class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     const sheet = new ServerStyleSheet();
@@ -29,6 +29,7 @@ export default class MyDocument extends Document {
       sheet.seal();
     }
   }
+
   render() {
     return (
       <Html lang="pt-BR">

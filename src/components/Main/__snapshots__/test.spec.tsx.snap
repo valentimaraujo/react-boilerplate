@@ -26,7 +26,7 @@ exports['<Main /> should render the heading 1'] = `
 }
 
 .c1 {
-  width: 25rem;
+  width: 50%;
   margin-bottom: 2rem;
 }
 
@@ -48,19 +48,19 @@ exports['<Main /> should render the heading 1'] = `
   class="c0"
 >
   <img
-    alt="Imagem de um átomo e React Avançando escrito ao lado."
+    alt="Imagem de capa React Boilerplate"
     class="c1"
-    src="/img/logo.svg"
+    src="/img/cover.png"
   />
   <h1
     class="c2"
   >
-    React Avançado
+    Start your next react project in seconds
   </h1>
   <h2
     class="c3"
   >
-    TypeScript, ReactJS, NextJS e Styled Components
+    A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices
   </h2>
   <img
     alt="Um desenvolvedor de frente para uma tela com código."

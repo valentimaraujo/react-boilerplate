@@ -1,7 +1,5 @@
 import Main from '../components/Main';
 
-const Home = () => {
-  return <Main />;
-};
+const Home = () => <Main />;
 
 export default Home;
