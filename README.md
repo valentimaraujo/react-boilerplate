@@ -1,4 +1,4 @@
-![React Boilerplate](./public/img/readme-cover.png)
+![React Boilerplate](./public/img/cover.png)
 
 This is a [Create React App](https://create-react-app.dev/) boilerplate with some configurations from React project.
 
