@@ -6,7 +6,7 @@ import GlobalStyles from 'style/global';
 const App = ({ Component, pageProps }: AppProps) => (
   <>
     <Head>
-      <title>React Avançado</title>
+      <title>React Boilerplate</title>
       <link rel="shortcut icon" href="/img/icon-192.png" />
       <link rel="apple-touch-icon" href="/img/icon-512.png" />
       <link rel="manifest" href="/manifest.json" />
