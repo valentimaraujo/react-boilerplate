@@ -1,5 +1,15 @@
 {
-  "extends": ["next", "next/core-web-vitals", "eslint:recommended"],
+  "env": {
+    "jest": true
+  },
+  "plugins": ["jest"],
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:storybook/recommended"
+  ],
+  "ignorePatterns": ["*.config.js", "*.css"],
   "globals": {
     "React": "readonly"
   },

@@ -14,7 +14,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Best boilerplate config
+          Best boilerplate config (Lint-staged)
         </h1>
 
         <p className={styles.description}>
