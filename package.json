@@ -1,7 +1,14 @@
 {
-  "name": "admintool-frontend",
-  "version": "0.1.0",
+  "author": "admintool-frontend-v2",
+  "description": "Automate repetitive work so you can spend more time on sales.",
+  "version": "2.0.0",
   "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0",
+    "yarn": ">=1.22.0",
+    "npm": "please-use-yarn"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
