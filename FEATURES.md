@@ -7,6 +7,7 @@
  | Configuração do Husk/Lint Staged                                   | <center>✅</center> |||
  | Configuração do Tailwind e Styled Components                       | <center>🔲</center> |||
  | Configuração StoryBook                                             | <center>🔲</center> |||
+ | Configuração PWA                                                   | <center>🔲</center> |||
  | Configuração plop para geração de automatica de componentes        | <center>🔲</center> |||
  | Criar arquivo de FEATURES                                          | <center>✅</center> |||
  | Criar arquivo de README                                            | <center>🔲</center> |||
