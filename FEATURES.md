@@ -8,6 +8,7 @@
  | Configuração do Tailwind e Styled Components                       | <center>🔲</center> |||
  | Configuração StoryBook                                             | <center>🔲</center> |||
  | Configuração PWA                                                   | <center>🔲</center> |||
+ | Configuração import order                                          | <center>🔲</center> |||
  | Configuração plop para geração de automatica de componentes        | <center>🔲</center> |||
  | Criar arquivo de FEATURES                                          | <center>✅</center> |||
  | Criar arquivo de README                                            | <center>🔲</center> |||
