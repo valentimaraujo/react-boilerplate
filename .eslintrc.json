@@ -58,6 +58,7 @@
       "error",
       {
         "devDependencies": [
+          "**/*.style.tsx",
           "**/*.test.tsx",
           "**/test.tsx",
           "**/*.spec.tsx",
