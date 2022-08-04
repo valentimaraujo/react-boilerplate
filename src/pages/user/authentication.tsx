@@ -5,6 +5,7 @@ import { Button, Container, Title } from './authentication.style';
 
 const Authentication: NextPageWithLayout = () => {
   const handlerBtnClick = () => {
+    // eslint-disable-next-line no-console
     console.log('handlerBtnClick');
   };
 
