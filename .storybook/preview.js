@@ -21,7 +21,7 @@ const customViewports = Object.fromEntries(
         },
       },
     ];
-  })
+  }),
 );
 
 // Allow Storybook to handle Next's <Image> component
@@ -41,5 +41,5 @@ export const parameters = {
     },
   },
   viewport: { viewports: customViewports },
-  layout: 'fullscreen'
+  layout: 'fullscreen',
 };
