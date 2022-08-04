@@ -1,7 +1,7 @@
 {
   "author": "admintool-frontend-v2",
   "description": "Automate repetitive work so you can spend more time on sales.",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "private": true,
   "license": "MIT",
   "engines": {
