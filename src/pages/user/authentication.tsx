@@ -5,7 +5,7 @@ import { NextPageWithLayout } from '../page';
 const Authentication: NextPageWithLayout = () => (
   <div>
     <Head>
-      <title>Login</title>
+      <title className="container">Login</title>
     </Head>
     <h1>User Authentication</h1>
   </div>

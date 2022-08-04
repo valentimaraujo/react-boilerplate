@@ -16,7 +16,8 @@
     "airbnb",
     "eslint:recommended",
     "plugin:storybook/recommended",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "plugin:tailwindcss/recommended"
   ],
   "ignorePatterns": ["*.config.js", "*.css"],
   "globals": {
