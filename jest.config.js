@@ -6,11 +6,11 @@ module.exports = {
     'src/**/*.ts(x)?',
     '!src/**/stories.tsx',
     '!src/pages/_app.tsx',
-    '!src/pages/index.tsx'
+    '!src/pages/index.tsx',
   ],
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
   modulePaths: ['<rootDir>/src/'],
   transform: {
-    '^.+\\.(js|jsx|ts|tsx)$': ['babel-jest', { presets: ['next/babel'] }]
-  }
-}
+    '^.+\\.(js|jsx|ts|tsx)$': ['babel-jest', { presets: ['next/babel'] }],
+  },
+};

@@ -1,10 +1,10 @@
 import { render, screen } from '@testing-library/react';
 
-import BaseTemplate from './BaseTemplate';
+import Layout from '.';
 
 describe('<BaseTemplate />', () => {
   it('renders correctly', () => {
-    render(<BaseTemplate sampleTextProp="renders correctly" />);
+    render(<Layout sampleTextProp="renders correctly">Any</Layout>);
     expect(screen.getByText(/renders correctly/i)).toBeInTheDocument();
   });
 });

@@ -2,18 +2,76 @@
   "env": {
     "jest": true
   },
-  "plugins": ["jest"],
+  "plugins": [
+    "jest",
+    "react",
+    "prettier",
+    "eslint-plugin-import-helpers"
+  ],
   "extends": [
     "next",
     "next/core-web-vitals",
+    "prettier",
+    "plugin:react/recommended",
+    "airbnb",
     "eslint:recommended",
-    "plugin:storybook/recommended"
+    "plugin:storybook/recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
   "ignorePatterns": ["*.config.js", "*.css"],
   "globals": {
     "React": "readonly"
   },
   "rules": {
-    "no-unused-vars": [1, { "args": "after-used", "argsIgnorePattern": "^_" }]
+    "react/function-component-definition": [
+      "error",
+      {
+        "namedComponents": ["function-declaration", "arrow-function"],
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
+    "react/jsx-props-no-spreading": "off",
+    "no-unused-vars": [1, { "args": "after-used", "argsIgnorePattern": "^_" }],
+
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always",
+        "groups": [
+          "module",
+          "/^@shared/",
+          [
+            "parent",
+            "sibling",
+            "index"
+          ]
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "ignoreCase": true
+        }
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.test.tsx",
+          "**/*.spec.tsx",
+          "**/*.stories.tsx"
+        ]
+      }
+    ],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "ts": "never",
+        "tsx": "never",
+        "": "never"
+      }
+    ]
   }
 }
