@@ -58,8 +58,9 @@
       {
         "devDependencies": [
           "**/*.test.tsx",
+          "**/test.tsx",
           "**/*.spec.tsx",
-          "**/*.stories.tsx"
+          "**/stories.tsx"
         ]
       }
     ],

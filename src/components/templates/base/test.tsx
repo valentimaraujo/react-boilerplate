@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 
-import BaseTemplate from './BaseTemplate';
+import BaseTemplate from '.';
 
 describe('<BaseTemplate />', () => {
   it('renders correctly', () => {
