@@ -1,9 +1,11 @@
-import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
-import styles from '../styles/Home.module.css';
 
-const Home: NextPage = () => (
+import Layout from '../components/Layout';
+import styles from '../styles/Home.module.css';
+import { NextPageWithLayout } from './page';
+
+const Home: NextPageWithLayout = () => (
   <div className={styles.container}>
     <Head>
       <title>Best boileplace config</title>
@@ -66,3 +68,5 @@ const Home: NextPage = () => (
 );
 
 export default Home;
+
+Home.getLayout = (page) => <Layout sampleTextProp="sampleTextProp">{page}</Layout>;

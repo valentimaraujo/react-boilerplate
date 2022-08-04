@@ -2,7 +2,12 @@
   "env": {
     "jest": true
   },
-  "plugins": ["jest", "react", "prettier"],
+  "plugins": [
+    "jest",
+    "react",
+    "prettier",
+    "eslint-plugin-import-helpers"
+  ],
   "extends": [
     "next",
     "next/core-web-vitals",
@@ -28,11 +33,23 @@
     "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
     "react/jsx-props-no-spreading": "off",
     "no-unused-vars": [1, { "args": "after-used", "argsIgnorePattern": "^_" }],
-    "import/order": [
-      "error",
+
+    "import-helpers/order-imports": [
+      "warn",
       {
+        "newlinesBetween": "always",
+        "groups": [
+          "module",
+          "/^@shared/",
+          [
+            "parent",
+            "sibling",
+            "index"
+          ]
+        ],
         "alphabetize": {
-          "order": "asc"
+          "order": "asc",
+          "ignoreCase": true
         }
       }
     ],

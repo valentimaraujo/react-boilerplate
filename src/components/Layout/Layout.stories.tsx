@@ -1,5 +1,5 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import mockLayoutProps from './Layout.mocks';
+
 import Layout, { ILayout } from '.';
 
 export default {
@@ -15,5 +15,5 @@ const Template: ComponentStory<typeof Layout> = (args) => (
 export const Principal = Template.bind({});
 
 Principal.args = {
-  ...mockLayoutProps.base,
+  sampleTextProp: 'Hello world!',
 } as ILayout;
