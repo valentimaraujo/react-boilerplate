@@ -9,7 +9,7 @@ export interface ILayout {
 const Layout = ({ children, sampleTextProp = 'items-center' }: ILayout) => (
   <>
     <Head>
-      <title>NextJs Fullstack App Template</title>
+      <title>NextJs Fullstack App Template - Changelog</title>
     </Head>
     <div>
       <p>{sampleTextProp}</p>
