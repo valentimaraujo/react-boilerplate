@@ -1,7 +1,9 @@
 {
   "name": "admintool-frontend-v2",
   "description": "Automate repetitive work so you can spend more time on sales.",
-  "version": "2.2.0",
+  "version": "2.0.0",
+  "author": "Valentim Araújo",
+  "email": "valentim@evodev.com.br",
   "private": true,
   "license": "MIT",
   "repository": {
