@@ -1,0 +1,23 @@
+import Head from 'next/head';
+
+import { NextPageWithLayout } from '../page';
+import { TitleH1, TitleH2 } from './style';
+
+const {{pascalCase name}}: NextPageWithLayout = () => {
+  const anyConst = 'anyConst';
+  console.log(anyConst);
+
+  return (
+    <div>
+      <Head>
+        <title>{{pascalCase name}}</title>
+      </Head>
+      <div>
+        <TitleH1>{{pascalCase name}}</TitleH1>
+        <TitleH2>ForGetInTest:{{pascalCase name}}</TitleH2>
+      </div>
+    </div>
+  );
+};
+
+export default {{pascalCase name}};

@@ -1,0 +1,19 @@
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+
+import {{pascalCase name}}, { I{{pascalCase name}} } from '.';
+
+export default {
+  title: 'Auto Generate/{{pascalCase name}}',
+  component: {{pascalCase name}},
+  argTypes: {},
+} as ComponentMeta<typeof {{pascalCase name}}>;
+
+const Template: ComponentStory<typeof {{pascalCase name}}> = (args) => (
+  <{{pascalCase name}} {...args} />
+);
+
+export const Default = Template.bind({});
+
+Default.args = {
+  sample{{pascalCase name}}Prop: '{{pascalCase name}}',
+} as I{{pascalCase name}};

@@ -62,7 +62,8 @@
           "**/*.test.tsx",
           "**/test.tsx",
           "**/*.spec.tsx",
-          "**/stories.tsx"
+          "**/stories.tsx",
+          "**/style.tsx"
         ]
       }
     ],
