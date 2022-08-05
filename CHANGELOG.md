@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/valentimaraujo/react-boilerplate/compare/v1.0.0...v1.0.1) (2022-08-05)
+
+
+### Bug Fixes
+
+* same changelog test ([7ac4952](https://github.com/valentimaraujo/react-boilerplate/commit/7ac4952a79909aa87475f9cd8b517f269880e199))
+
 # 1.0.0 (2022-08-05)
 
 
