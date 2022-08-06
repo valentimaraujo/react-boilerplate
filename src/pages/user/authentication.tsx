@@ -1,57 +1,57 @@
 import type {NextPage} from 'next'
 import {signIn} from "next-auth/react";
+import {useState} from "react";
+import {useRouter} from 'next/router';
 
 const Authentication: NextPage = () => {
+  const router = useRouter();
+  const [email, setEmail] = useState<string>('');
+  const [password, setPassword] = useState<string>('');
+  const [loginError, setLoginError] = useState<boolean>(false);
 
-  const handleSignIn: React.FormEventHandler<HTMLFormElement> = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  const handleSignIn: React.FormEventHandler<HTMLFormElement> = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setLoginError(false)
+
     const res = await signIn('credentials', {
       redirect: false,
-      email: 'valentim_araujo@yahoo.com.br',
-      password: 'password',
-      callbackUrl: `${window.location.origin}`,
+      email,
+      password,
     });
 
-    if (res) {
-      if (res.error) {
-        console.log(res.error);
-      }
+    if (res?.error) {
+      setLoginError(false)
+    } else {
+      router.push('/')
     }
-
-    console.log('handleSignIn', res);
   };
 
   return (
     <div>
       <h1>Authentication</h1>
       <form onSubmit={handleSignIn}>
+        {loginError && <p style={{color: 'red'}}>Not Authorized</p>}
         <div className="mb-4">
           <label
             htmlFor="email"
-            className="text-sm font-bold uppercase text-gray-600"
           >
             Email
             <input
               name="email"
-              aria-label="enter your email"
-              aria-required="true"
               type="text"
-              className="mt-2 w-full bg-gray-300 p-3 text-gray-900"
+              onChange={event => setEmail(event.target.value)}
             />
           </label>
         </div>
         <div className="mb-6">
           <label
             htmlFor="password"
-            className="text-sm font-bold uppercase text-gray-600"
           >
             password
             <input
               name="password"
-              aria-label="enter your password"
-              aria-required="true"
               type="password"
-              className="mt-2 w-full bg-gray-300 p-3 text-gray-900"
+              onChange={event => setPassword(event.target.value)}
             />
           </label>
         </div>
@@ -61,4 +61,4 @@ const Authentication: NextPage = () => {
   )
 }
 
-export default Authentication
+export default Authentication;
