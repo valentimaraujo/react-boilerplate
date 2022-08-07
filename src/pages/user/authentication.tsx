@@ -2,18 +2,14 @@ import type { NextPage } from 'next';
 import { signIn } from 'next-auth/react';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
+import Login from 'templates/user/login';
 
 const Authentication: NextPage = () => {
   const router = useRouter();
-  const [email, setEmail] = useState<string>('');
-  const [password, setPassword] = useState<string>('');
   const [loginError, setLoginError] = useState<boolean>(false);
 
-  // eslint-disable-next-line max-len
-  const handleSignIn: React.FormEventHandler<HTMLFormElement> = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
+  const handleSignIn = async ({ email, password }: { email: string, password: string }) => {
     setLoginError(false);
-
     const res = await signIn('credentials', {
       redirect: false,
       email,
@@ -28,37 +24,7 @@ const Authentication: NextPage = () => {
   };
 
   return (
-    <div>
-      <h1>Authentication</h1>
-      <form onSubmit={handleSignIn}>
-        {loginError && <p style={{ color: 'red' }}>Not Authorized</p>}
-        <div className="mb-4">
-          <label
-            htmlFor="email"
-          >
-            Email
-            <input
-              name="email"
-              type="text"
-              onChange={(event) => setEmail(event.target.value)}
-            />
-          </label>
-        </div>
-        <div className="mb-6">
-          <label
-            htmlFor="password"
-          >
-            password
-            <input
-              name="password"
-              type="password"
-              onChange={(event) => setPassword(event.target.value)}
-            />
-          </label>
-        </div>
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
+    <Login handlerAuthentication={handleSignIn} loginError={loginError} />
   );
 };
 

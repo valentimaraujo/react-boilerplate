@@ -34,6 +34,7 @@
     "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
     "react/jsx-props-no-spreading": "off",
     "import/prefer-default-export": "off",
+    "jsx-a11y/label-has-associated-control": "off",
     "no-unused-vars": [1, { "args": "after-used", "argsIgnorePattern": "^_" }],
     "import-helpers/order-imports": [
       "warn",
