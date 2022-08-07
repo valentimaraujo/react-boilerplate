@@ -13,12 +13,16 @@ export default NextAuth({
         },
         password: { label: 'Password', type: 'password' },
       },
-      authorize: (credentials) => ({
-        id: credentials,
-        name: 'John',
-        email: 'johndoe@test.com',
-        access_token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE2NTk3ODQ5NDksImV4cCI6MTY5MTMyMDk0OSwiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkdpdmVuTmFtZSI6IkpvaG5ueSIsIlN1cm5hbWUiOiJSb2NrZXQiLCJFbWFpbCI6Impyb2NrZXRAZXhhbXBsZS5jb20iLCJSb2xlIjpbIk1hbmFnZXIiLCJQcm9qZWN0IEFkbWluaXN0cmF0b3IiXX0.Yq5x-9wzOcwe_aoeFEv0C95kBpBvLLwuFVCjFIfuKsU',
-      }),
+      authorize: (credentials) => {
+        // eslint-disable-next-line no-console
+        console.log(credentials);
+        return {
+          id: 123,
+          name: 'John',
+          email: 'johndoe@test.com',
+          access_token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE2NTk3ODQ5NDksImV4cCI6MTY5MTMyMDk0OSwiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkdpdmVuTmFtZSI6IkpvaG5ueSIsIlN1cm5hbWUiOiJSb2NrZXQiLCJFbWFpbCI6Impyb2NrZXRAZXhhbXBsZS5jb20iLCJSb2xlIjpbIk1hbmFnZXIiLCJQcm9qZWN0IEFkbWluaXN0cmF0b3IiXX0.Yq5x-9wzOcwe_aoeFEv0C95kBpBvLLwuFVCjFIfuKsU',
+        };
+      },
     }),
   ],
   secret: 'process.env.SECRET',
