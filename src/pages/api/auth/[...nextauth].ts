@@ -16,7 +16,6 @@ export default NextAuth({
       authorize: (credentials) => {
         // eslint-disable-next-line no-console
         console.log(credentials);
-
         return {
           id: 123,
           name: 'John',
