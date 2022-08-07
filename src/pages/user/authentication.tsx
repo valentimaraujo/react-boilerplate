@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import { signIn } from 'next-auth/react';
+import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import Login from 'templates/user/login';
@@ -24,7 +25,12 @@ const Authentication: NextPage = () => {
   };
 
   return (
-    <Login handlerAuthentication={handleSignIn} loginError={loginError} />
+    <>
+      <Head>
+        <title>User Athentication</title>
+      </Head>
+      <Login handlerAuthentication={handleSignIn} loginError={loginError} />
+    </>
   );
 };
 

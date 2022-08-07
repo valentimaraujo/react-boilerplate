@@ -12,6 +12,7 @@ module.exports = {
     '!src/pages/_document.tsx',
     '!src/pages/_app.tsx',
     '!src/pages/index.tsx',
+    '!src/pages/api/auth/\\[...nextauth\\].ts',
   ],
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
   modulePaths: ['<rootDir>/src/'],
