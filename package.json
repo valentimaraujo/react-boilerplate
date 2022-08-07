@@ -8,7 +8,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "directory": "https://github.com/valentimaraujo/react-boilerplate"
+    "directory": "https://github.com/valentimaraujo/react-boilerplateq"
   },
   "engines": {
     "node": ">=14.0.0",
