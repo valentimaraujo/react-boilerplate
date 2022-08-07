@@ -35,7 +35,10 @@
     "react/jsx-props-no-spreading": "off",
     "import/prefer-default-export": "off",
     "jsx-a11y/label-has-associated-control": "off",
-    "no-unused-vars": [1, { "args": "after-used", "argsIgnorePattern": "^_" }],
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error"
+    ],
     "import-helpers/order-imports": [
       "warn",
       {

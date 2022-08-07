@@ -6,16 +6,16 @@ import {
 
 export interface ILogin {
   loginError: boolean;
-  handlerAuthentication: ({ email, password }: { email: string, password: string }) => Promise<void>
+  handlerAuthentication: ({ email, password }: { email: string, password: string }) => void
 }
 
 const Login = ({ handlerAuthentication, loginError }: ILogin) => {
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
 
-  const handlerLogin = async (event: React.FormEvent<HTMLFormElement>) => {
+  const handlerLogin = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    await handlerAuthentication({ email, password });
+    handlerAuthentication({ email, password });
   };
 
   return (
